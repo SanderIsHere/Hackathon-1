@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>GOSNAKE</title>
+    <link rel="stylesheet" href="../css/snake.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../image/GoTopia nav.png">
+
+</head>
+<body>
+    <h1 class="main-title">GO Snake</h1>
+    <div class="speed-control-container" style="margin-bottom: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 5px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <label for="speedSlider" style="margin-right: 10px; font-weight: bold;">Kecepatan:</label>
+        <input type="range" id="speedSlider" min="50" max="250" value="120" style="vertical-align: middle;">
+        <span id="speedValue" style="margin-left: 10px; font-weight: bold;">120 ms</span>
+    </div>
+
+    <div class="wrapper">
+        <div class="game-details">
+            <span class="score">Skor: 0</span>
+            <span class="high-score">Skor Tertinggi: 0</span>
+        </div>
+        <div class="play-board"></div>
+        <button id="start-btn">Mulai Permainan</button>
+         <div class="controls">
+            <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+            <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+            <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+            <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+        </div>
+    </div>
+
+    <div id="game-over-screen" style="display: none;"> <div class="overlay">
+            <h2>Permainan Berakhir!</h2>
+            <p id="finalScore">Skor Akhir: 0</p>
+            <button id="retry-btn">Coba Lagi</button>
+        </div>
+    </div>
+
+    <script src="../js/snake.js" type="module"></script>
+
+
+</body>
+</html>

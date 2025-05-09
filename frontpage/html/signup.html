@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="../css/frontpage.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="icon" href="../image/GoTopia nav.png">
+
+
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <a href="index.html" class="back-to-home" aria-label="Kembali ke beranda">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" fill="currentColor"/></svg>
+                Beranda
+            </a>
+            <h2>Buat Akun Baru</h2>
+
+            <div class="form-message" id="formMessage"></div>
+
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" id="signupUsername" name="signupUsername" placeholder="Pilih username Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Email</label>
+                    <input type="email" id="signupEmail" name="signupEmail" placeholder="Masukkan email Anda" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" name="signupPassword" placeholder="Buat password Anda (min. 6 karakter)" required>
+                </div>
+                <button type="submit" class="cta-button auth-button">Daftar</button>
+            </form>
+            <p class="auth-switch">
+                Sudah punya akun? <a href="login.html">Login di sini</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/singup.js" type="module"></script>
+
+</body>
+</html>

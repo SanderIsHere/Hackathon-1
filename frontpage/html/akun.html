@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akun</title>
+    <link rel="stylesheet" href="../css/frontpage.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="icon" href="../image/GoTopia nav.png">
+
+
+</head>
+<body>
+    <div class="auth-container account-container">
+        <div class="auth-card account-card">
+            <a href="index.html" class="back-to-home" aria-label="Kembali ke beranda">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" fill="currentColor"/></svg>
+                Beranda
+            </a>
+            <h2>Pengaturan Akun</h2>
+            <p id="accountCurrentUser" class="current-user-info">Memuat data pengguna...</p>
+
+            <div class="form-message" id="accountPageMessage" style="margin-bottom: 20px;"></div>
+
+            <div class="account-section">
+                <h3>Ubah Username</h3>
+                <div class="form-message" id="updateUsernameMessage"></div>
+                <form id="updateUsernameForm">
+                    <div class="form-group">
+                        <label for="currentUsername">Username Saat Ini</label>
+                        <input type="text" id="currentUsername" name="currentUsername" readonly disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="newUsername">Username Baru</label>
+                        <input type="text" id="newUsername" name="newUsername" placeholder="Masukkan username baru" required>
+                    </div>
+                    <button type="submit" class="cta-button auth-button">Simpan Username</button>
+                </form>
+            </div>
+
+            <div class="account-section">
+                <h3>Ubah Email</h3>
+                <div class="form-message" id="updateEmailMessage"></div>
+                <form id="updateEmailForm">
+                    <div class="form-group">
+                        <label for="currentEmail">Email Saat Ini</label>
+                        <input type="email" id="currentEmail" name="currentEmail" readonly disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="newEmail">Email Baru</label>
+                        <input type="email" id="newEmail" name="newEmail" placeholder="Masukkan email baru" required>
+                    </div>
+                    <button type="submit" class="cta-button auth-button">Simpan Email</button>
+                </form>
+            </div>
+
+            <div class="account-section">
+                <h3>Ubah Password</h3>
+                <div class="form-message" id="updatePasswordMessage"></div>
+                <form id="updatePasswordForm">
+                    <div class="form-group">
+                        <label for="currentPassword">Password Saat Ini</label>
+                        <input type="password" id="currentPassword" name="currentPassword" placeholder="Masukkan password saat ini" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">Password Baru</label>
+                        <input type="password" id="newPassword" name="newPassword" placeholder="Masukkan password baru (min. 6 karakter)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmNewPassword">Konfirmasi Password Baru</label>
+                        <input type="password" id="confirmNewPassword" name="confirmNewPassword" placeholder="Konfirmasi password baru" required>
+                    </div>
+                    <button type="submit" class="cta-button auth-button">Simpan Password</button>
+                </form>
+            </div>
+
+            <div class="account-section delete-account-section">
+                <h3>Hapus Akun</h3>
+                <p>Tindakan ini tidak dapat diurungkan. Semua data Anda akan dihapus secara permanen.</p>
+                <button type="button" class="cta-button auth-button delete-button" id="deleteAccountButton">Hapus Akun Saya</button>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="../js/akun.js" type="module"></script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+body.auth-body {
+    background-color: var(--gray-light, #f8f9fa);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--soft-blue-bg, #F0F5FF);
+    padding: 20px;
+}
+
+.auth-card {
+    background-color: var(--white, #ffffff);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+}
+
+.auth-card h2 {
+    color: var(--secondary-color, #1D3D71);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-dark, #333);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: var(--text-dark, #333);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: var(--primary-color, #F16634);
+    box-shadow: 0 0 0 2px rgba(241, 102, 52, 0.2);
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.auth-switch {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: var(--gray-dark, #6c757d);
+}
+
+.auth-switch a {
+    color: var(--primary-color, #F16634);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.back-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--gray-dark, #6c757d);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.back-to-home svg {
+    margin-right: 5px;
+    fill: var(--gray-dark, #6c757d);
+}
+
+.back-to-home:hover,
+.back-to-home:hover svg {
+    color: var(--primary-color, #F16634);
+    fill: var(--primary-color, #F16634);
+}
+
+
+@media (max-width: 500px) {
+    .auth-card {
+        padding: 25px 20px;
+        margin: 15px;
+    }
+
+    .auth-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .auth-button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .back-to-home {
+        top: 15px;
+        left: 15px;
+    }
+}
+
+
+.form-message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: none;
+}
+
+.form-message.success-message {
+    background-color: #e6fffa;
+    color: #00bfa5;
+    border: 1px solid #00bfa5;
+    display: block;
+}
+
+.form-message.error-message {
+    background-color: #ffebee;
+    color: #f44336;
+    border: 1px solid #f44336;
+    display: block;
+}
+
+
+.account-container .auth-card {
+    max-width: 650px;
+    text-align: left;
+}
+
+.account-container .auth-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current-user-info {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    color: var(--gray-dark);
+    background-color: var(--soft-blue-bg);
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.account-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.account-section:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.account-section h3 {
+    color: var(--secondary-color);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+.account-section .form-group input[readonly] {
+    background-color: var(--gray-light, #f8f9fa);
+    color: var(--gray-dark, #6c757d);
+    cursor: not-allowed;
+    border: 1px dashed #ddd;
+}
+
+.delete-account-section p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: var(--gray-dark);
+    line-height: 1.6;
+}
+
+.delete-button {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    box-shadow: 0 4px 10px rgba(217, 83, 79, 0.3);
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.account-section .form-message {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}

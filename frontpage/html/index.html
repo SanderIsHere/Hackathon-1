@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOTOPIA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/frontpage.css">
+    <link rel="icon" href="../image/GoTopia nav.png">
+
+
+<body>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class = "logo-area">
+            <div class="logo-img"><img src = "../image/GoTopia nav.png"></div>
+            <div class="logo-placeholder">GOTOPIA</div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#description">About</a></li>
+                    <li><a href="#about">Team</a></li>
+                    <li><a href="#reviewX">Review</a></li>
+
+                </ul>
+            </nav>
+            <div class="user-area">
+                <span id="usernameDisplay" class="username-display"></span>
+                <a href="akun.html" id="accountLink" class="account-link" style="display: none;">Akun Saya</a>
+                <button class="login-button" id="authButton">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    
+
+                    <h1 class="animate-on-scroll">GO-TOPIA</h1>
+                    <span class = "badge animate-on-scroll" id="notifHalo">HALO!</span>
+                    <button class="cta-button animate-on-scroll" onclick = "window.location.href='../html/loading.html'">Play Games</button>
+                </div>
+            </div>
+            <div class="bg-ball ball1"></div>
+            <div class="bg-ball ball2"></div>
+            <div class="bg-ball ball3"></div>
+            <div class="bg-ball ball4"></div>
+        </section>
+
+        <section class="description-section">
+            <div class="container">
+                <div id ="description">
+                <h2 class="animate-on-scroll">Description</h2>
+                <p class="animate-on-scroll">
+                    This website was created by our team of four members. It was completed in less than a week as our graduation project for HACKTIV8 Phase 0, Full-stack JavaScript.
+                </p>
+                <div class="stats-grid">
+                    <div class="stats-item animate-on-scroll">
+                        <h3>a Week less</h3>
+                        <p>Created This Web</p>
+                    </div>
+                    <div class="stats-item animate-on-scroll">
+                        <h3>a Month</h3>
+                        <p>Learning</p>
+                    </div>
+                    <div class="stats-item animate-on-scroll">
+                        <h3>Full-Stack JS</h3>
+                        <p>Program</p>
+                    </div>
+                     <div class="stats-item animate-on-scroll">
+                        <h3>HACKTIV8</h3>
+                        <p>Campus</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="video-showcase-section">
+            <div class="container">
+                <h2 class="animate-on-scroll">Showcase</h2>
+                <div class="video-placeholder-container animate-on-scroll">
+                    <div class="image-placeholder"> <p>Visual / Video Placeholder</p>
+                        <button class="play-button" aria-label="Play Video">
+                            &#9658; </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us" id="about">
+            <div class="container">
+                <h2 class="animate-on-scroll">Tim Kami</h2>
+                <div class="team-grid">
+                    <div class="team-member animate-on-scroll">
+                        <div class="member-photo-placeholder">Foto</div>
+                        <h3>Hizkia J<br>Budiana</h3>
+                        <p class="member-title">Student</p>
+                        <p class="member-desc">Student Phase 0 HACKTIV8</p>
+                        <div class="member-socials">
+                            <a href="#" aria-label="Email Nama Anggota 1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2l8 5 8-5H4zm0 12h16V8l-8 5-8-5v10z" fill="currentColor"/></svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn Nama Anggota 1">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-11 6H5v10h3V9zm-1.5-2.25A1.75 1.75 0 1 0 4.75 5 1.75 1.75 0 0 0 6.5 6.75zM19 9h-2.58c-.02.99-.31 1.79-1.07 2.35-.76.56-1.81.8-2.85.8-2.07 0-3.5-.78-3.5-2.65V9H6v10h3v-5.38c0-.79.22-1.38.67-1.77.44-.39 1.04-.58 1.78-.58.74 0 1.31.19 1.75.58.43.39.65.98.65 1.77V19h3V9z" fill="currentColor"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member animate-on-scroll">
+                        <div class="member-photo-placeholder">Foto</div>
+                        <h3>Eugenius<br>Sanderson JB </h3>
+                        <p class="member-title">Student</p>
+                        <p class="member-desc">Student Phase 0 HACKTIV8</p>
+                        <div class="member-socials">
+                                <a href="#" aria-label="Email Nama Anggota 2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2l8 5 8-5H4zm0 12h16V8l-8 5-8-5v10z" fill="currentColor"/></svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn Nama Anggota 2">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-11 6H5v10h3V9zm-1.5-2.25A1.75 1.75 0 1 0 4.75 5 1.75 1.75 0 0 0 6.5 6.75zM19 9h-2.58c-.02.99-.31 1.79-1.07 2.35-.76.56-1.81.8-2.85.8-2.07 0-3.5-.78-3.5-2.65V9H6v10h3v-5.38c0-.79.22-1.38.67-1.77.44-.39 1.04-.58 1.78-.58.74 0 1.31.19 1.75.58.43.39.65.98.65 1.77V19h3V9z" fill="currentColor"/></svg>
+                                </a>
+                        </div>
+                    </div>
+                    <div class="team-member animate-on-scroll">
+                        <div class="member-photo-placeholder">Foto</div>
+                        <h3>Dewi<br>Aminah</h3>
+                        <p class="member-title">Student</p>
+                        <p class="member-desc">Student Phase 0 HACKTIV8</p>
+                        <div class="member-socials">
+                            <a href="#" aria-label="Email Nama Anggota 3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2l8 5 8-5H4zm0 12h16V8l-8 5-8-5v10z" fill="currentColor"/></svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn Nama Anggota 3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-11 6H5v10h3V9zm-1.5-2.25A1.75 1.75 0 1 0 4.75 5 1.75 1.75 0 0 0 6.5 6.75zM19 9h-2.58c-.02.99-.31 1.79-1.07 2.35-.76.56-1.81.8-2.85.8-2.07 0-3.5-.78-3.5-2.65V9H6v10h3v-5.38c0-.79.22-1.38.67-1.77.44-.39 1.04-.58 1.78-.58.74 0 1.31.19 1.75.58.43.39.65.98.65 1.77V19h3V9z" fill="currentColor"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="team-member animate-on-scroll">
+                        <div class="member-photo-placeholder">Foto</div>
+                        <h3>Stephen J<br>Manullang </h3>
+                        <p class="member-title">Student</p>
+                        <p class="member-desc">Student Phase 0 HACKTIV8</p>
+                        <div class="member-socials">
+                                <a href="#" aria-label="Email Nama Anggota 4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2l8 5 8-5H4zm0 12h16V8l-8 5-8-5v10z" fill="currentColor"/></svg>
+                                </a>
+                                <a href="#" aria-label="LinkedIn Nama Anggota 4">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-11 6H5v10h3V9zm-1.5-2.25A1.75 1.75 0 1 0 4.75 5 1.75 1.75 0 0 0 6.5 6.75zM19 9h-2.58c-.02.99-.31 1.79-1.07 2.35-.76.56-1.81.8-2.85.8-2.07 0-3.5-.78-3.5-2.65V9H6v10h3v-5.38c0-.79.22-1.38.67-1.77.44-.39 1.04-.58 1.78-.58.74 0 1.31.19 1.75.58.43.39.65.98.65 1.77V19h3V9z" fill="currentColor"/></svg>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer rating-footer">
+        <div class="container" id ="reviewX">
+            <h2 class="animate-on-scroll">Apa Kata Mereka?</h2>
+            <div class="ratings-grid animate-on-scroll" id="ratingsGrid">
+                </div>
+            <div class="rating-cta-container animate-on-scroll">
+                <button class="cta-button rating-cta-button" id="rateButton">Beri Rating Anda!</button>
+                <p class="login-notice-placeholder" id="loginNoticeForRating" style="display: none; color: var(--primary-color, #007bff); margin-top: 0.5rem;">Anda harus login untuk memberi rating.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="currentYear"></span> GOTOPIA. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="ratingModalBackdrop"></div>
+    <div class="modal" id="ratingModal">
+        <button class="modal-close-button" id="closeRatingModalButton" aria-label="Tutup">&times;</button>
+        <h3 class="modal-title" id="ratingModalTitle">Beri Rating Anda</h3>
+        <form id="ratingForm">
+            <div class="form-group">
+                <label>Rating Anda:</label>
+                <div class="rating-stars-input" id="ratingStarsInput">
+                    <span class="star-input" data-value="1">☆</span>
+                    <span class="star-input" data-value="2">☆</span>
+                    <span class="star-input" data-value="3">☆</span>
+                    <span class="star-input" data-value="4">☆</span>
+                    <span class="star-input" data-value="5">☆</span>
+                </div>
+                <input type="hidden" id="selectedRating" name="selectedRating" value="0">
+            </div>
+            <div class="form-group">
+                <label for="ratingComment">Komentar Anda:</label>
+                <textarea id="ratingComment" name="ratingComment" rows="4" placeholder="Tulis komentar Anda di sini..." maxlength="150" required></textarea>
+                <small class="char-counter" id="charCounter">0/150</small>
+            </div>
+            <div class="form-message" id="ratingFormMessage"></div>
+            <button type="submit" class="cta-button auth-button" id="ratingSubmitButton">Kirim Rating</button>
+        </form>
+    </div>
+
+    <div id="toastNotification" class="toast">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="../js/frontpage.js" type="module"></script>
+
+</body>
+</html>
